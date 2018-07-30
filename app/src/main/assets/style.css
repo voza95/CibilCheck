@@ -1,1 +1,42 @@
-.col-sm-4 {display:none;}
+p{
+    display: none !important;
+}
+h1{
+    display: none !important;
+}
+.cibil-logo{
+    display: none !important;
+}
+.main-header{
+    display: none !important;
+}
+.col-sm-8.col-sm-pull-4{
+    display: none !important;
+}
+.col-sm-4 {
+    display: none !important;
+}
+.addtoany_share_save_container {
+	 display: none !important;
+}
+.row sub-header{
+ 	 display: none !important;
+}
+.col-sm-4 {
+    display: none !important;
+}
+.article-sub-info{
+	 display: none !important;
+}
+.col-sm-6{
+	 display: none !important;
+}
+.emicalc_widget{
+	 display: none !important;
+}
+.img-responsive{
+	 display: none !important;
+}
+.table-responsive {
+	 display: none !important;
+}

@@ -193,73 +193,80 @@ public class MainActivity extends AppCompatActivity
     private void injectCSS() {
         try {
 
-            webView.loadUrl("javascript:(function() { " +
-                    "var head = document.getElementsByTagName('footer')[0];"
-                    + "head.parentNode.removeChild(head);" +
-                    "})()");
-            webView.loadUrl("javascript:(function() { " +
-                    "var head = document.getElementsByTagName('p')[2];"
-                    + "head.parentNode.removeChild(head);" +
-                    "})()");
-            webView.loadUrl("javascript:(function() { " +
-                    "var head = document.getElementsByTagName('p')[3];"
-                    + "head.parentNode.removeChild(head);" +
-                    "})()");
-            webView.loadUrl("javascript:(function() { " +
-                    "var head = document.getElementsByTagName('p')[4];"
-                    + "head.parentNode.removeChild(head);" +
-                    "})()");
-            webView.loadUrl("javascript:(function() { " +
-                    "var head = document.getElementsByTagName('h1')[0];"
-                    + "head.parentNode.removeChild(head);" +
-                    "})()");
-            webView.loadUrl("javascript:(function() { " +
-                    "var head = document.getElementsByTagName('h1')[2];"
-                    + "head.parentNode.removeChild(head);" +
-                    "})()");
-
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('row category-row')[0].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('col-xs-12')[0].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('article-sub-info')[0].style.display='none'; })()");
-
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('col-sm-6')[0].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('col-sm-6')[1].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('addtoany_share_save_container addtoany_content addtoany_content_top')[0].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('post-thumbnail img-responsive')[0].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('container')[0].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('emicalc_widget')[0].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('img-responsive')[3].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('table-responsive blog-table')[0].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('table-responsive blog-table')[1].style.display='none'; })()");
-            webView.loadUrl("javascript:(function() { " +
-                    "document.getElementsByClassName('widget-sec')[0].style.display='none'; })()");
-//            InputStream inputStream = getApplicationContext().getAssets().open("style.css");
-//            byte[] buffer = new byte[inputStream.available()];
-//            inputStream.read(buffer);
-//            inputStream.close();
-//            String encoded = Base64.encodeToString(buffer, Base64.NO_WRAP);
-//            //widget-sec
-//            webView.loadUrl("javascript:(function() {" +
-//                    "var head = document.getElementsByTagName('footer')[0];head.parentNode.removeChild(head);"+
-//                    "var parent = document.getElementsByTagName('head').item(0);" +
-//                    "var style = document.createElement('style');" +
-//                    "style.type = 'text/css';" +
-//                    // Tell the browser to BASE64-decode the string into your script !!!
-//                    "style.innerHTML = window.atob('" + encoded + "');" +
-//                    "parent.appendChild(style)" +
+//            webView.loadUrl("javascript:(function() { " +
+//                    "var head = document.getElementsByTagName('footer')[0];"
+//                    + "head.parentNode.removeChild(head);" +
 //                    "})()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "var head = document.getElementsByTagName('p')[2];"
+//                    + "head.parentNode.removeChild(head);" +
+//                    "})()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "var head = document.getElementsByTagName('p')[3];"
+//                    + "head.parentNode.removeChild(head);" +
+//                    "})()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "var head = document.getElementsByTagName('p');"
+//                    + "head.parentNode.removeChild(head);" +
+//                    "})()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('row category-row')[0].style.display='none'; })()");
+//
+//
+//            webView.loadUrl("javascript:(function() { " +
+//                    "var head = document.getElementsByTagName('h1')[0];"
+//                    + "head.parentNode.removeChild(head);" +
+//                    "})()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "var head = document.getElementsByTagName('h1')[2];"
+//                    + "head.parentNode.removeChild(head);" +
+//                    "})()");
+//
+//
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('row category-row')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('col-xs-12')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('article-sub-info')[0].style.display='none'; })()");
+//
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('row sub-header')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('col-sm-6')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('col-sm-6')[1].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('addtoany_share_save_container addtoany_content addtoany_content_top')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('post-thumbnail img-responsive')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('container')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('emicalc_widget')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('img-responsive')[3].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('table-responsive blog-table')[0].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('table-responsive blog-table')[1].style.display='none'; })()");
+//            webView.loadUrl("javascript:(function() { " +
+//                    "document.getElementsByClassName('widget-sec')[0].style.display='none'; })()");
+            InputStream inputStream = getApplicationContext().getAssets().open("style.css");
+            byte[] buffer = new byte[inputStream.available()];
+            inputStream.read(buffer);
+            inputStream.close();
+            String encoded = Base64.encodeToString(buffer, Base64.NO_WRAP);
+            //widget-sec
+            webView.loadUrl("javascript:(function() {" +
+                    "var head = document.getElementsByTagName('footer')[0];head.parentNode.removeChild(head);"+
+                    "var parent = document.getElementsByTagName('head').item(0);" +
+                    "var style = document.createElement('style');" +
+                    "style.type = 'text/css';" +
+                    // Tell the browser to BASE64-decode the string into your script !!!
+                    "style.innerHTML = window.atob('" + encoded + "');" +
+                    "parent.appendChild(style)" +
+                    "})()");
         } catch (Exception e) {
             e.printStackTrace();
         }//blog-container

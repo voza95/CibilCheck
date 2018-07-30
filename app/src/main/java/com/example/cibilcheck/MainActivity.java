@@ -198,7 +198,23 @@ public class MainActivity extends AppCompatActivity
                     + "head.parentNode.removeChild(head);" +
                     "})()");
             webView.loadUrl("javascript:(function() { " +
+                    "var head = document.getElementsByTagName('p')[2];"
+                    + "head.parentNode.removeChild(head);" +
+                    "})()");
+            webView.loadUrl("javascript:(function() { " +
+                    "var head = document.getElementsByTagName('p')[3];"
+                    + "head.parentNode.removeChild(head);" +
+                    "})()");
+            webView.loadUrl("javascript:(function() { " +
+                    "var head = document.getElementsByTagName('p')[4];"
+                    + "head.parentNode.removeChild(head);" +
+                    "})()");
+            webView.loadUrl("javascript:(function() { " +
                     "var head = document.getElementsByTagName('h1')[0];"
+                    + "head.parentNode.removeChild(head);" +
+                    "})()");
+            webView.loadUrl("javascript:(function() { " +
+                    "var head = document.getElementsByTagName('h1')[2];"
                     + "head.parentNode.removeChild(head);" +
                     "})()");
 

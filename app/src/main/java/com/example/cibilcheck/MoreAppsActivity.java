@@ -29,6 +29,8 @@ import com.example.cibilcheck.fragment.AppsListFragment;
 import com.example.cibilcheck.util.SheetConstant;
 
 
+import org.jetbrains.annotations.Nullable;
+
 import java.util.ArrayList;
 
 
@@ -43,7 +45,7 @@ public class MoreAppsActivity extends AppCompatActivity {
 
     @Override
 
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more_apps);
 
@@ -137,7 +139,6 @@ public class MoreAppsActivity extends AppCompatActivity {
         onSupportNavigateUp();
 
         Intent intent = new Intent(MoreAppsActivity.this, BackForAllAppsActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         finish();
         startActivity(intent);
 
@@ -180,10 +181,6 @@ public class MoreAppsActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(MoreAppsActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 111);
         }
     }
-
-
-
-
 
     @SuppressLint("MissingSuperCall")
     @Override

@@ -71,10 +71,10 @@ class AppsListFragment : Fragment(), MakeNetworkRequest.GetVolleyRequestCallback
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view: View = inflater.inflate(R.layout.fragment_apps_list, container, false)
 
-        recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view) as RecyclerView
-        mProgressBar = view.findViewById<ProgressBar>(R.id.progressBar) as ProgressBar
-        recyclerView.layoutManager = GridLayoutManager(activity, 1) as RecyclerView.LayoutManager?
-        recyclerView.itemAnimator = DefaultItemAnimator() as RecyclerView.ItemAnimator?
+        recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view)
+        mProgressBar = view.findViewById<ProgressBar>(R.id.progressBar)
+        recyclerView.layoutManager = GridLayoutManager(activity, 1)
+        recyclerView.itemAnimator = DefaultItemAnimator()
         if (data != null && data!!.size != 0) {
             /* data!!.forEach {
                  getDonwloadedFile(it)

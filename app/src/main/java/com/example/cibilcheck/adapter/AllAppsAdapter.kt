@@ -118,5 +118,4 @@ class AllAppsAdapter(private val itemsData: ArrayList<AppCard>?, var context: Co
         return false
     }
 
-
 }

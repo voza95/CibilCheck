@@ -1,5 +1,6 @@
 package com.example.cibilcheck;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
@@ -75,7 +76,6 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onAnimationEnd(Animation animation) {
 
-
             }
 
             @Override
@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
+            startActivity(new Intent(this,BackForAllAppsActivity.class));
             super.onBackPressed();
         }
     }
@@ -178,12 +179,10 @@ public class MainActivity extends AppCompatActivity
             }, 1000);
             super.onPageFinished(view, url);
         }
-
     }
 
     public static boolean mCanGoBack() {
         return webView.canGoBack();
-
     }
 
     public static void mGoBack() {

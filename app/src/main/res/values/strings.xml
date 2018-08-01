@@ -6,4 +6,11 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string name="banner_ad_unit_id">246167562611949_246168129278559</string>
+    <string name="interstitial_full_screen">246167562611949_246167839278588</string>
+    <string name="moreapp_banner_ad_unit_id">246167562611949_246167632611942</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

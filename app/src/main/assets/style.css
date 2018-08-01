@@ -4,6 +4,18 @@ p{
 h1{
     display: none !important;
 }
+h2{
+    display: none !important;
+}
+h3{
+    display: none !important;
+}
+blockquote{
+    display: none !important;
+}
+.inline-related-post-container{
+    display: none !important;
+}
 .cibil-logo{
     display: none !important;
 }
